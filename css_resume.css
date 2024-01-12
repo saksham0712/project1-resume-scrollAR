@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+    --main-color: #292929e0;
+    --secondary-color: #b5b2b2;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    width: 90%;
+    gap: 54vw;
+}
+
+header nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+
+
+}
+
+.new {
+    /* background: #ebeef1; */
+}
+
+.logo-img {
+    height: 90px;
+    width: 97px;
+    margin: 9px 46px;
+    filter: drop-shadow(3px 0px 3px rgba(29, 29, 29, 0.786));
+    /* margin-top: 7px; */
+}
+
+header nav ul li {
+    list-style: none;
+    font-size: 21px;
+    font-weight: 300;
+    color: var(--main-color);
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: ease-out 0.5s;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+.home-img {
+    width: 92vw;
+    height: 95vh;
+}
+
+.container .info_ {
+    justify-content: center;
+    align-items: center;
+}
+
+.container h3 {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 32px;
+    margin-left: 10vw;
+
+}
+
+.container h3 span {
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-size: 3.5rem;
+}
+
+.info_ p {
+    color: var(--main-color);
+    font-size: 20px;
+    margin: 22px 109px;
+}
+
+.info_ span {
+    color: var(--secondary-color);
+    font-size: 30px;
+}
+
+.cards {
+    /* display: grid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2.5vh;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+
+.skill-card {
+    width: 20vw;
+    height: 45vh;
+    background-color: white;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 11px 3px rgba(10, 90, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+
+    display: flex;
+    align-items: center;
+    margin: 12px 12px;
+    padding: auto;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 2.5vh;
+    transition: ease-out 0.5s;
+
+}
+
+.skill{
+    margin-top: 10vh;
+}
+
+.skill h3 {
+    ont-weight: 600;
+    color: var(--secondary-color);
+    font-size: 3.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.skill-card:hover {
+    background-color: white;
+    box-shadow:-10px -10px 10px -1px rgba(255, 255, 255, 0.70), inset -1px 0px 11px 2px rgba(10, 90, 169, 0.16);
+}
+
+.skill-card img {
+    height: 25.5vh;
+    width: 7.5vw;
+    object-fit: contain;
+}
+
+.content{
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(48, 47, 47, 0.938);
+    /* overflow: hidden;*/
+    /* content-visibility: hidden; */
+    display: none;
+    font-size: 15px;
+    transition: ease-out 1s;
+}
+
+.content:hover{
+    padding: 3px 20px;
+    /* content-visibility: visible; */
+        overflow:
+    /* display: block; */
+}
